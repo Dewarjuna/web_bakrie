@@ -23,7 +23,7 @@ class Migration_Create_pegawai_table extends CI_Migration {
                 'type' => 'VARCHAR',
                 'constraint' => 100, 
             ),
-            'kelamin' => array(
+            'jenis_kelamin' => array(
                 'type' => 'VARCHAR',
                 'constraint' => 100,
             ),

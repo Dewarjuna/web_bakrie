@@ -10,14 +10,22 @@
     <title>Gentelella Alela! | </title>
 
     <!-- Bootstrap -->
-    <link href="<?php echo base_url('assets/vendors/bootstrap/dist/css/bootstrap.min.css'); ?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/vendors/bootstrap/dist/css/bootstrap.min.css'); ?>"rel="stylesheet">
     <!-- Font Awesome -->
     <link href="<?php echo base_url('assets/vendors/font-awesome/css/font-awesome.min.css'); ?>" rel="stylesheet">
     <!-- NProgress -->
     <link href="<?php echo base_url('assets/vendors/nprogress/nprogress.css'); ?>" rel="stylesheet">
     <!-- iCheck -->
-   <link href="<?php echo base_url('assets/vendors/iCheck/skins/flat/green.css'); ?>" rel="stylesheet">
-
+    <link href="<?php echo base_url('assets/vendors/iCheck/skins/flat/green.css'); ?>" rel="stylesheet">    <!-- bootstrap-wysiwyg -->
+    <link href="<?php echo base_url('assets/vendors/google-code-prettify/bin/prettify.min.css'); ?>" rel="stylesheet">
+    <!-- Select2 -->
+    <link href="<?php echo base_url('assets/vendors/select2/dist/css/select2.min.css'); ?>" rel="stylesheet"/>
+     <!-- bootstrap-daterangepicker -->
+    <link href="<?php echo base_url('assets/vendors/bootstrap-daterangepicker/daterangepicker.css'); ?>" rel="stylesheet">
+    <!-- Switchery -->
+    <link href="<?php echo base_url('assets/vendors/switchery/dist/switchery.min.css'); ?>" rel="stylesheet">
+    <!-- starrr -->
+    <link href="<?php echo base_url('assets/vendors/starrr/dist/starrr.css'); ?>" rel="stylesheet">
     <!-- Custom Theme Style -->
     <link href="<?php echo base_url('assets/build/css/custom.min.css'); ?>" rel="stylesheet">
   </head>
@@ -181,7 +189,7 @@
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <img src="<?php echo base_url('assets/production/images/img.jpg'); ?>" alt="">John Doe
+                  <img src="<?php echo base_url('assets/production/images/img.jpg'); ?>" alt="">John Doe
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -272,7 +280,7 @@
           <div class="">
             <div class="page-title">
               <div class="title_left">
-                <h3>Tables <small>Some examples to get you started</small></h3>
+                <h3>Form Elements</h3>
               </div>
 
               <div class="title_right">
@@ -286,238 +294,12 @@
                 </div>
               </div>
             </div>
-
             <div class="clearfix"></div>
-
-            <!-- <div class="row">
-              <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <h2>Basic Tables <small>basic table subtitle</small></h2>
-                    <ul class="nav navbar-right panel_toolbox">
-                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                          <li><a href="#">Settings 1</a>
-                          </li>
-                          <li><a href="#">Settings 2</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li><a class="close-link"><i class="fa fa-close"></i></a>
-                      </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="x_content">
-
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th>#</th>
-                          <th>First Name</th>
-                          <th>Last Name</th>
-                          <th>Username</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>Mark</td>
-                          <td>Otto</td>
-                          <td>@mdo</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>Jacob</td>
-                          <td>Thornton</td>
-                          <td>@fat</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td>Larry</td>
-                          <td>the Bird</td>
-                          <td>@twitter</td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-                  </div>
-                </div>
-              </div> -->
-
-
-             <!--  <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <h2>Stripped table <small>Stripped table subtitle</small></h2>
-                    <ul class="nav navbar-right panel_toolbox">
-                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                          <li><a href="#">Settings 1</a>
-                          </li>
-                          <li><a href="#">Settings 2</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li><a class="close-link"><i class="fa fa-close"></i></a>
-                      </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="x_content">
-
-                    <table class="table table-striped">
-                      <thead>
-                        <tr>
-                          <th>#</th>
-                          <th>First Name</th>
-                          <th>Last Name</th>
-                          <th>Username</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>Mark</td>
-                          <td>Otto</td>
-                          <td>@mdo</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>Jacob</td>
-                          <td>Thornton</td>
-                          <td>@fat</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td>Larry</td>
-                          <td>the Bird</td>
-                          <td>@twitter</td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-                  </div>
-                </div>
-              </div> -->
-
-              <div class="clearfix"></div>
-
-              <!-- <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <h2>Hover rows <small>Try hovering over the rows</small></h2>
-                    <ul class="nav navbar-right panel_toolbox">
-                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                      </li>
-                      <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                        <ul class="dropdown-menu" role="menu">
-                          <li><a href="#">Settings 1</a>
-                          </li>
-                          <li><a href="#">Settings 2</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li><a class="close-link"><i class="fa fa-close"></i></a>
-                      </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="x_content">
-                    <table class="table table-hover">
-                      <thead>
-                        <tr>
-                          <th>#</th>
-                          <th>First Name</th>
-                          <th>Last Name</th>
-                          <th>Username</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">1</th>
-                          <td>Mark</td>
-                          <td>Otto</td>
-                          <td>@mdo</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>Jacob</td>
-                          <td>Thornton</td>
-                          <td>@fat</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td>Larry</td>
-                          <td>the Bird</td>
-                          <td>@twitter</td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-                  </div>
-                </div>
-              </div> -->
-
-
-              <div class="col-md-6 col-sm-6 col-xs-12">
-    <div class="x_panel">
-        <div class="x_title">
-            <h2>Employee Statistics <small>Current workforce overview</small></h2>
-            <ul class="nav navbar-right panel_toolbox">
-                <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                        <i class="fa fa-wrench"></i>
-                    </a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Refresh Data</a></li>
-                        <li><a href="#">Export Stats</a></li>
-                    </ul>
-                </li>
-                <li><a class="close-link"><i class="fa fa-close"></i></a></li>
-            </ul>
-            <div class="clearfix"></div>
-        </div>
-        <div class="x_content">
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Active Employees</th>
-                        <th>Male</th>
-                        <th>Female</th>
-                        <th>Permanent</th>
-                        <th>Contract</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row"><i class="fa fa-bar-chart"></i></th>
-                        <td class="success"><?= $counts['totalActive'] ?></td>
-                        <td class="info"><?= $counts['totalMale'] ?></td>
-                        <td class="warning"><?= $counts['totalFemale'] ?></td>
-                        <td class="success"><?= $counts['totalPermanen'] ?></td>
-                        <td class="danger"><?= $counts['totalKontrak'] ?></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
-              <div class="clearfix"></div>
-
+            <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Table design <small>Custom design</small></h2>
+                    <h2>Form Design <small>different form elements</small></h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -535,72 +317,109 @@
                     </ul>
                     <div class="clearfix"></div>
                   </div>
-
                   <div class="x_content">
+                    <br />
+                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" method="post" action="<?php echo site_url('welcome/submit_pegawai'); ?>">
 
-                    <!-- <p>Add class <code>bulk_action</code> to table for bulk actions options on row select</p> -->
+    <div class="form-group">
+        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="nip">NIP <span class="required">*</span></label>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <input type="text" id="nip" name="nip" required="required" class="form-control col-md-7 col-xs-12">
+        </div>
+    </div>
 
-                    <div class="table-responsive">
-                      <table class="table table-striped jambo_table bulk_action">
-                        <thead>
-                          <tr class="headings">
-                            <th>
-                              <input type="checkbox" id="check-all" class="flat">
-                            </th>
-                            <th class="column-title">NIP </th>
-                            <th class="column-title">Nama </th>
-                            <th class="column-title">Jenis Kelamin </th>
-                            <th class="column-title">Jabatan </th>
-                            <th class="column-title">Tanggal Aktif Jabatan </th>
-                            <th class="column-title">Tanggal Masuk </th>
-                            <th class="column-title">Status </th>
-                            <th class="column-title">isactive </th>
-                            <th class="column-title no-link last"><span class="nobr">Action</span>
-                            </th>
-                            <th class="bulk-actions" colspan="7">
-                              <a class="antoo" style="color:#fff; font-weight:500;">Bulk Actions ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
-                            </th>
-                          </tr>
-                        </thead>
-                        
-                        <tbody>
-                          <?php foreach($pegawai_list as $pegawai): ?>
-                          <tr class="even pointer">
-                            <td class="a-center">
-                              <input type="checkbox" class="flat" name="table_records">
-                              </td>
-                              <td><?= $pegawai->nip ?></td>
-                              <td><?= $pegawai->nama ?></td>
-                              <td><?= $pegawai->jenis_kelamin ?></td>
-                              <td><?= $pegawai->jabatan ?></td>
-                              <td><?= date('d/m/Y', strtotime($pegawai->tglaktif_jabatan)) ?></td>
-                              <td><?= date('d/m/Y', strtotime($pegawai->tglmasuk_jabatan)) ?></td>
-                              <td><?= $pegawai->status ?></td>
-                              <td><?= $pegawai->aktif ?></td>
-                              <td class="last">
-                                <a href="<?= base_url('welcome/edit/'.$pegawai->nip) ?>" onclick="return confirm('Are you sure you want to edit this item?');">
-                                <i class="fa fa-pencil"></i> Edit 
-                                </a>
-                                <a href="<?= base_url('welcome/delete/'.$pegawai->nip) ?>" onclick="return confirm('Are you sure you want to delete this item?');">
-                                <i class="fa fa-trash-o"></i> Delete 
-                                </a>
-                              </td>
-                            </tr>
-                          <?php endforeach; ?>
-                        </tbody>
-                      </table>
-                    </div>
-							
-						
+    <div class="form-group">
+        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="nama">Nama Pegawai <span class="required">*</span></label>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <input type="text" id="nama" name="nama" required="required" class="form-control col-md-7 col-xs-12">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-3 col-sm-3 col-xs-12">Jenis Kelamin</label>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div id="jenis_kelamin" class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                    <input type="radio" name="jenis_kelamin" value="Laki-laki"> &nbsp; Laki-laki &nbsp;
+                </label>
+                <label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                    <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="nama">Jabatan <span class="required">*</span></label>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <input type="text" id="nama" name="jabatan" required="required" class="form-control col-md-7 col-xs-12">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-3 col-sm-3 col-xs-12">Tanggal Aktif Jabatan <span class="required">*</span></label>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="input-group date" id="tglaktif_jabatan">
+                <input type="text" name="tglaktif_jabatan" class="form-control" required="required" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-3 col-sm-3 col-xs-12">Tanggal Masuk Jabatan <span class="required">*</span></label>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="input-group date" id="tglmasuk_jabatan">
+                <input type="text" name="tglmasuk_jabatan" class="form-control" required="required" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="status">Status <span class="required">*</span></label>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <input type="text" id="status" name="status" required="required" class="form-control col-md-7 col-xs-12">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-3 col-sm-3 col-xs-12">Aktif? <span class="required">*</span></label>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+            <div id="aktif" class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                    <input type="radio" name="aktif" value="Aktif" required> Aktif
+                </label>
+                <label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                    <input type="radio" name="aktif" value="Tidak Aktif"> Tidak Aktif
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="ln_solid"></div>
+    <div class="form-group">
+        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+            <button class="btn btn-primary" type="button">Cancel</button>
+            <button class="btn btn-primary" type="reset">Reset</button>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+    </div>
+</form>
+
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+          <div class="clearfix"></div>
         <!-- /page content -->
 
-        <!-- footer content -->
+            <!-- footer content -->
         <footer>
           <div class="pull-right">
             Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
@@ -619,10 +438,60 @@
     <script src="<?php echo base_url('assets/vendors/fastclick/lib/fastclick.js'); ?>"></script>
     <!-- NProgress -->
     <script src="<?php echo base_url('assets/vendors/nprogress/nprogress.js'); ?>"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="<?php echo base_url('assets/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js'); ?>"></script>
     <!-- iCheck -->
     <script src="<?php echo base_url('assets/vendors/iCheck/icheck.min.js'); ?>"></script>
-
+    <!-- bootstrap-daterangepicker -->
+    <script src="<?php echo base_url('assets/vendors/moment/min/moment.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/vendors/bootstrap-daterangepicker/daterangepicker.js'); ?>"></script>
+    <!-- bootstrap-wysiwyg -->
+    <script src="<?php echo base_url('assets/vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/vendors/jquery.hotkeys/jquery.hotkeys.js'); ?>"></script>
+    <script src="<?php echo base_url('assets/vendors/google-code-prettify/src/prettify.js'); ?>"></script>
+    <!-- jQuery Tags Input -->
+    <script src="<?php echo base_url('assets/vendors/jquery.tagsinput/src/jquery.tagsinput.js'); ?>"></script>
+    <!-- Switchery -->
+    <script src="<?php echo base_url('assets/vendors/switchery/dist/switchery.min.js'); ?>"></script>
+    <!-- Select2 -->
+    <script src="<?php echo base_url('assets/vendors/select2/dist/js/select2.full.min.js'); ?>"></script>
+    <!-- Parsley -->
+    <script src="<?php echo base_url('assets/vendors/parsleyjs/dist/parsley.min.js'); ?>"></script>
+    <!-- Autosize -->
+    <script src="<?php echo base_url('assets/vendors/autosize/dist/autosize.min.js'); ?>"></script>
+    <!-- jQuery autocomplete -->
+    <script src="<?php echo base_url('assets/vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js'); ?>"></script>
+    <!-- starrr -->
+    <script src="<?php echo base_url('assets/vendors/starrr/dist/starrr.js'); ?>"></script>
     <!-- Custom Theme Scripts -->
     <script src="<?php echo base_url('assets/build/js/custom.min.js'); ?>"></script>
-  </body>
+    <script src="<?php echo base_url('assets/vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js'); ?>"></script>
+
+    <script src="<?php echo base_url('assets/build/js/custom.min.js'); ?>"></script>
+    
+    <!-- Initialize datetimepicker -->
+<script>
+    $('#tglmasuk_jabatan input').daterangepicker({
+  singleDatePicker: true,
+  showDropdowns: true,
+  locale: {
+    format: 'YYYY-MM-DD'
+  }
+});
+    $('#tglaktif_jabatan input').daterangepicker({
+  singleDatePicker: true,
+  showDropdowns: true,
+  locale: {
+    format: 'YYYY-MM-DD'
+  }
+});
+    $('#tglaktif_jabatan').on('apply.daterangepicker', function(ev, picker) {
+        $(this).val(picker.startDate.format('YYYY-MM-DD'));
+    });
+    $('#tglmasuk_jabatan input').on('apply.daterangepicker', function(ev, picker) {
+        $(this).val(picker.startDate.format('YYYY-MM-DD'));
+    });
+</script>
+</body>
 </html>
+

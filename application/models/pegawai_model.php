@@ -84,8 +84,8 @@ class Pegawai_model extends CI_Model {
         // Get counts with fresh queries
         return [
             'totalActive'   => $this->get_count($build_base_query),
-            'totalMale'     => $this->get_count($build_base_query, ['pegawai.kelamin' => 'Laki-laki']),
-            'totalFemale'   => $this->get_count($build_base_query, ['pegawai.kelamin' => 'Perempuan']),
+            'totalMale'     => $this->get_count($build_base_query, ['pegawai.jenis_kelamin' => 'Laki-laki']),
+            'totalFemale'   => $this->get_count($build_base_query, ['pegawai.jenis_kelamin' => 'Perempuan']),
             'totalPermanen' => $this->get_count($build_base_query, ['pegawai.status' => 'permanen']),
             'totalKontrak'  => $this->get_count($build_base_query, ['pegawai.status' => 'kontrak'])
         ];
