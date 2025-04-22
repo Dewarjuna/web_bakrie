@@ -30,13 +30,12 @@ class Pegawai_model extends CI_Model {
         // Update timestamp
         $data['updated_at'] = date('Y-m-d H:i:s');
         
-        $this->db->where('id', $id);
+        $this->db->where('id', $id); // Use the ID to find the record
         return $this->db->update('pegawai', $data);
     }
-
     // Delete record
-    public function delete($id) {
-        $this->db->where('id', $id);
+    public function delete($nip) {
+        $this->db->where('nip', $nip);
         return $this->db->delete('pegawai');
     }
 
@@ -86,8 +85,8 @@ class Pegawai_model extends CI_Model {
             'totalActive'   => $this->get_count($build_base_query),
             'totalMale'     => $this->get_count($build_base_query, ['pegawai.jenis_kelamin' => 'Laki-laki']),
             'totalFemale'   => $this->get_count($build_base_query, ['pegawai.jenis_kelamin' => 'Perempuan']),
-            'totalPermanen' => $this->get_count($build_base_query, ['pegawai.status' => 'permanen']),
-            'totalKontrak'  => $this->get_count($build_base_query, ['pegawai.status' => 'kontrak'])
+            'totalPermanen' => $this->get_count($build_base_query, ['pegawai.status' => 'Permanen']),
+            'totalKontrak'  => $this->get_count($build_base_query, ['pegawai.status' => 'Kontrak'])
         ];
     }
     

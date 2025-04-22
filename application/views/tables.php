@@ -86,6 +86,7 @@
                     <ul class="nav child_menu">
                     <li><a href="<?php echo base_url('index.php/welcome/tables'); ?>">Tabel Data Pegawai</a></li>
                     <li><a href="<?php echo base_url('index.php/welcome/inputpegawaiform'); ?>">Tambah data pegawai</a></li>
+                    <li><a href="<?php echo base_url('index.php/welcome/edit_pegawai'); ?>">Edit data pegawai</a></li>
                     </ul>
                   </li>
                   <!-- <li><a><i class="fa fa-bar-chart-o"></i> Data Presentation <span class="fa fa-chevron-down"></span></a>
@@ -578,10 +579,10 @@
                               <td><?= $pegawai->status ?></td>
                               <td><?= $pegawai->aktif ?></td>
                               <td class="last">
-                                <a href="<?= base_url('welcome/edit/'.$pegawai->nip) ?>" onclick="return confirm('Are you sure you want to edit this item?');">
+                                <a href="<?php echo base_url('welcome/edit_pegawai/'.$pegawai->id) ?>" onclick="return confirm('Are you sure you want to edit this item?');">
                                 <i class="fa fa-pencil"></i> Edit 
                                 </a>
-                                <a href="<?= base_url('welcome/delete/'.$pegawai->nip) ?>" onclick="return confirm('Are you sure you want to delete this item?');">
+                                <a href="<?php echo base_url('welcome/delete/'.$pegawai->nip) ?>" onclick="return confirm('Are you sure you want to delete this item?');">
                                 <i class="fa fa-trash-o"></i> Delete 
                                 </a>
                               </td>
